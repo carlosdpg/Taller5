@@ -16,41 +16,41 @@ form.addEventListener('submit', e => {
 
 function checkInputs() {
 	
-	if(idusuario === '') {
+	if(idusuario == '') {
 		setErrorFor(idusuario);
 	} 
 
-    if(idpais === '') {
+    if(idpais == '') {
 		setErrorFor(idpais);
 	} 
     
-    if(nombre === '') {
+    if(nombre == '') {
 		setErrorFor(nombre);
 	} 
      else if (nombre.length > 25) {
 		setErrorFor(nombre);
     
-    if(apellido === '') {
+    if(apellido == '') {
 		setErrorFor(apellido);
 	}
      else if (apellido.length > 25) {
 		setErrorFor(apellido);
     
-    if(direccion === '') {
+    if(direccion == '') {
 		setErrorFor(direccion);
     
-    if(ccusuario === '') {
+    if(ccusuario == '') {
 		setErrorFor(ccusuario);
     
-    if(contrasena === '') {
+    if(contrasena == '') {
 		setErrorFor(contrasena);
 	} 
     
-    if(confcontrasena === '') {
+    if(confcontrasena == '') {
 		setErrorFor(confcontrasena);
 	}
     
-    if(email === '') {
+    if(email == '') {
 		setErrorFor(email);
 	}  
     else if (!isEmail(email)) {
