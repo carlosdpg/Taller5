@@ -1,13 +1,13 @@
 let form = document.getElementById('registro');
-const idusuario = document.getElementById('idusuarioinp'.toString().trim);
-const idpais = document.getElementById('idpaisinp'.toString().trim);
-const nombre = document.getElementById('nombreinp'.trim);
-const apellido = document.getElementById('apellidoinp').trim);
-const direccion = document.getElementById('direccioninp'.trim);
-const ccusuario = document.getElementById('ccusuarioinp'.trim);
-const contrasena = document.getElementById('ccpaswdinp'.trim);
-const confcontrasena = document.getElementById('ccconfpaswdinp'.trim);
-const email = document.getElementById('emailinp'.trim);
+const idusuario = document.getElementById('idusuarioinp').toString().trim;
+const idpais = document.getElementById('idpaisinp').toString().trim;
+const nombre = document.getElementById('nombreinp').trim;
+const apellido = document.getElementById('apellidoinp').trim;
+const direccion = document.getElementById('direccioninp)'.trim;
+const ccusuario = document.getElementById('ccusuarioinp').trim;
+const contrasena = document.getElementById('ccpaswdinp').trim;
+const confcontrasena = document.getElementById('ccconfpaswdinp').trim;
+const email = document.getElementById('emailinp').trim;
 
 alert("prueba");
 
