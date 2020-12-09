@@ -8,6 +8,8 @@ const contrasena = document.getElementById('ccpaswdinp'.toString().trim);
 const confcontrasena = document.getElementById('ccconfpaswdinp'.toString().trim);
 const email = document.getElementById('emailinp'.toString().trim);
 
+alert("prueba");
+
 form.addEventListener('submit', e => {
 	e.preventDefault();
 	
@@ -29,12 +31,14 @@ function checkInputs() {
 	} 
      else if (nombre.length > 25) {
 		setErrorFor(nombre);
+	 }
     
     if(apellido == '') {
 		setErrorFor(apellido);
 	}
      else if (apellido.length > 25) {
 		setErrorFor(apellido);
+	 }
     
     if(direccion == '') {
 		setErrorFor(direccion);
@@ -55,6 +59,7 @@ function checkInputs() {
 	}  
     else if (!isEmail(email)) {
 		setErrorFor(email);
+	}
 }
 
 function setErrorFor(input) {
