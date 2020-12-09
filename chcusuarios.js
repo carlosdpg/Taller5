@@ -1,12 +1,12 @@
-const idusuario = document.getElementById('idusuarioinp');
-const idpais = document.getElementById('idpaisinp');
-const nombre = document.getElementById('nombreinp');
-const apellido = document.getElementById('apellidoinp');
-const direccion = document.getElementById('direccioninp');
-const ccusuario = document.getElementById('ccusuarioinp');
-const contrasena = document.getElementById('ccpaswdinp');
-const confcontrasena = document.getElementById('ccconfpaswdinp');
-const email = document.getElementById('emailinp');
+const idusuario = document.getElementById('idusuarioinp'.toString().trim);
+const idpais = document.getElementById('idpaisinp'.toString().trim);
+const nombre = document.getElementById('nombreinp'.toString().trim);
+const apellido = document.getElementById('apellidoinp'.toString().trim);
+const direccion = document.getElementById('direccioninp'.toString().trim);
+const ccusuario = document.getElementById('ccusuarioinp'.toString().trim);
+const contrasena = document.getElementById('ccpaswdinp'.toString().trim);
+const confcontrasena = document.getElementById('ccconfpaswdinp'.toString().trim);
+const email = document.getElementById('emailinp'.toString().trim);
 
 form.addEventListener('submit', e => {
 	e.preventDefault();
@@ -15,58 +15,48 @@ form.addEventListener('submit', e => {
 });
 
 function checkInputs() {
-	// trim to remove the whitespaces
-	const idusuarioValue = idusuario.value.trim();
-    const idpaisValue = idpais.value.trim();
-    const nombreValue = nombre.value.trim();
-    const apellidoValue = apellido.value.trim();
-    const direccionValue = direccion.value.trim();
-    const ccusuarioValue = ccusuario.value.trim();
-    const contrasenaValue =contrasena.value.trim();
-    const confcontrasenaValue = confcontrasena.value.trim();
-    const emailValue = email.value.trim();
 	
-	if(idusuarioValue === '') {
+	if(idusuario === '') {
 		setErrorFor(idusuario);
 	} 
 
-    if(idpaisValue === '') {
+    if(idpais === '') {
 		setErrorFor(idpais);
 	} 
     
-    if(nombreValue === '') {
-		setErrorFor(nombre');
+    if(nombre === '') {
+		setErrorFor(nombre);
 	} 
      else if (nombre.length > 25) {
 		setErrorFor(nombre);
     
-    if(apellidoValue === '') {
+    if(apellido === '') {
 		setErrorFor(apellido);
 	}
      else if (apellido.length > 25) {
 		setErrorFor(apellido);
     
-    if(direccionValue === '') {
+    if(direccion === '') {
 		setErrorFor(direccion);
     
-    if(ccusuarioValue === '') {
+    if(ccusuario === '') {
 		setErrorFor(ccusuario);
     
-    if(contrasenaValue === '') {
-		setErrorFor(contrasena');
+    if(contrasena === '') {
+		setErrorFor(contrasena);
 	} 
     
-    if(confcontrasenaValue === '') {
+    if(confcontrasena === '') {
 		setErrorFor(confcontrasena);
 	}
     
-    if(emailValue === '') {
+    if(email === '') {
 		setErrorFor(email);
 	}  
-    else if (!isEmail(emailValue)) {
+    else if (!isEmail(email)) {
 		setErrorFor(email);
 }
 
 function setErrorFor(input) {
-	alert("No es valido.");
+	alert(input + "  no es valido.");
 }
