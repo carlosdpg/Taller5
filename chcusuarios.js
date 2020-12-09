@@ -1,3 +1,4 @@
+let form = document.getElementById('registro');
 const idusuario = document.getElementById('idusuarioinp'.toString().trim);
 const idpais = document.getElementById('idpaisinp'.toString().trim);
 const nombre = document.getElementById('nombreinp'.toString().trim);
