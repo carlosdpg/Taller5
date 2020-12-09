@@ -21,7 +21,7 @@ const eml = email.trim;
 
 alert("prueba");
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', (e) => {
 	e.preventDefault();
 	
 	checkInputs();
