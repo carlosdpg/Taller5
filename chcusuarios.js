@@ -1,13 +1,23 @@
-let form = document.getElementById('registro');
-const idusuario = document.getElementById('idusuarioinp').toString().trim;
-const idpais = document.getElementById('idpaisinp').toString().trim;
-const nombre = document.getElementById('nombreinp').trim;
-const apellido = document.getElementById('apellidoinp').trim;
-const direccion = document.getElementById('direccioninp)'.trim;
-const ccusuario = document.getElementById('ccusuarioinp').trim;
-const contrasena = document.getElementById('ccpaswdinp').trim;
-const confcontrasena = document.getElementById('ccconfpaswdinp').trim;
-const email = document.getElementById('emailinp').trim;
+const form = document.getElementById('registro');
+const idusuario = document.getElementById('idusuarioinp');
+const idpais = document.getElementById('idpaisinp');
+const nombre = document.getElementById('nombreinp');
+const apellido = document.getElementById('apellidoinp');
+const direccion = document.getElementById('direccioninp');
+const ccusuario = document.getElementById('ccusuarioinp');
+const contrasena = document.getElementById('ccpaswdinp');
+const confcontrasena = document.getElementById('ccconfpaswdinp');
+const email = document.getElementById('emailinp');
+
+const idus = idusuario.toString().trim;
+const idp = idpais.toString().trim;
+const nmbr = nombre.trim;
+const aplld = apellido.trim;
+const drccn = direccion.trim;
+const ccusr = ccusuario.trim;
+const ctrsn = contrasena.trim;
+const cnfctrsn = confcontrasena.trim;
+const eml = email.trim;
 
 alert("prueba");
 
@@ -19,47 +29,47 @@ form.addEventListener('submit', e => {
 
 function checkInputs() {
 	
-	if(idusuario == '') {
-		setErrorFor(idusuario);
+	if(idus == '') {
+		setErrorFor("idusuario");
 	} 
 
-    if(idpais == '') {
-		setErrorFor(idpais);
+    if(idp == '') {
+		setErrorFor("idpais");
 	} 
     
-    if(nombre == '') {
-		setErrorFor(nombre);
+    if(nmbr == '') {
+		setErrorFor("nombre");
 	} 
-     else if (nombre.length > 25) {
-		setErrorFor(nombre);
+     else if (nmbr.length > 25) {
+		setErrorFor("nombre");
 	 }
     
-    if(apellido == '') {
-		setErrorFor(apellido);
+    if(aplld == '') {
+		setErrorFor("apellido");
 	}
-     else if (apellido.length > 25) {
-		setErrorFor(apellido);
+     else if (aplld.length > 25) {
+		setErrorFor("apellido");
 	 }
     
-    if(direccion == '') {
-		setErrorFor(direccion);
+    if(drccn == '') {
+		setErrorFor("direccion");
     
-    if(ccusuario == '') {
-		setErrorFor(ccusuario);
+    if(ccusr == '') {
+		setErrorFor("ccusuario");
     
-    if(contrasena == '') {
-		setErrorFor(contrasena);
+    if(ctrsn == '') {
+		setErrorFor("contrasena");
 	} 
     
-    if(confcontrasena == '') {
-		setErrorFor(confcontrasena);
+    if(cnfctrsn == '') {
+		setErrorFor("confcontrasena");
 	}
     
-    if(email == '') {
-		setErrorFor(email);
+    if(eml == '') {
+		setErrorFor("email");
 	}  
-    else if (!isEmail(email)) {
-		setErrorFor(email);
+    else if (!isEmail(eml)) {
+		setErrorFor("email");
 	}
 }
 
