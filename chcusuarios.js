@@ -28,8 +28,6 @@ cnfctrsn = cnfctrsn.trim();
 let eml = email + "";
 eml = eml.trim();
 
-alert("prueba");
-
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
 	
