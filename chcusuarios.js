@@ -112,6 +112,10 @@ function checkInputs() {
 		error = true;
 		document.getElementById('ccusuarioinp').innerHTML = "No puede dejar este espacio en blanco.";
 	}
+	else if(tiene_simbolos(ccusr) == true) {
+		error = true;
+		document.getElementById('ccusuarioinp').innerHTML = "No puede tener caracteres extranos..";
+	}
 
     if(ctrsn == "") {
 		error = true;
