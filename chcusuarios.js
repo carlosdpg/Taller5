@@ -84,72 +84,72 @@ function checkInputs() {
 	let error = false;
 	if(idus == "") {
 		error = true;
-		document.getElementById('idusuarioinp').innerHTML = "No puede dejar este espacio en blanco.";
+		document.getElementById('erridus').innerHTML = "No puede dejar este espacio en blanco.";
 	} 
 
     if(idp == "") {
 		error = true;
-		document.getElementById('idpaisinp').innerHTML = "No puede dejar este espacio en blanco.";
+		document.getElementById('erridpa').innerHTML = "No puede dejar este espacio en blanco.";
 	} 
     
     if(nmbr == "") {
 		error = true;
-		document.getElementById('nombreinp').innerHTML = "No puede dejar este espacio en blanco.";
+		document.getElementById('errnom').innerHTML = "No puede dejar este espacio en blanco.";
 	} 
     
     if(aplld == "") {
 		error = true;
-		document.getElementById('apellidoinp').innerHTML = "No puede dejar este espacio en blanco.";
+		document.getElementById('errapll').innerHTML = "No puede dejar este espacio en blanco.";
 	}
     
     if(drccn == "") {
 		error = true;
-		document.getElementById('direccioninp').innerHTML = "No puede dejar este espacio en blanco.";
+		document.getElementById('errdircc').innerHTML = "No puede dejar este espacio en blanco.";
 	}
 	else if((/^cll/.test(drccn.substring(0,4)) == false) && (/^cra/.test(drccn.substring(0,4)) == false) && (/^av/.test(drccn.substring(0,4)) == false) && (/^anv/.test(drccn.substring(0,4)) == false) && (/^trans/.test(drccn.substring(0,4)) == false)){
 		error = true;
-		document.getElementById('direccioninp').innerHTML = "Ingrese una direccion valida (sin mayusculas).";
+		document.getElementById('errdircc').innerHTML = "Ingrese una direccion valida (sin mayusculas).";
 	}
 
     if(ccusr == "") {
 		error = true;
-		document.getElementById('ccusuarioinp').innerHTML = "No puede dejar este espacio en blanco.";
+		document.getElementById('errccusr').innerHTML = "No puede dejar este espacio en blanco.";
 	}
 	else if(tiene_simbolos(ccusr) == true) {
 		error = true;
-		document.getElementById('ccusuarioinp').innerHTML = "No puede tener caracteres extranos..";
+		document.getElementById('errccusr').innerHTML = "No puede tener caracteres extranos..";
 	}
 
     if(ctrsn == "") {
 		error = true;
-		document.getElementById('ccpaswdinp').innerHTML = "No puede dejar este espacio en blanco.";
+		document.getElementById('errctr').innerHTML = "No puede dejar este espacio en blanco.";
 	} 
 	else if((tiene_mayusculas(ctrsn) == false) && (tiene_minusculas(ctrsn) == false) && (tiene_numeros(ctrsn) == false) && (tiene_simbolos(ctrsn) == false)){
 		error = true;
-		document.getElementById('ccpaswdinp').innerHTML = "La contrasena necesita tener al menos una letra mayuscula, una minuscula, un numero y  1 simbolos y tener de 15 a 20 caracteres.";
+		document.getElementById('errctr').innerHTML = "La contrasena necesita tener al menos una letra mayuscula, una minuscula, un numero y  1 simbolos y tener de 15 a 20 caracteres.";
 	}
     
     if(cnfctrsn == "") {
 		error = true;
-		document.getElementById('ccconfpaswdinp').innerHTML = "No puede dejar este espacio en blanco.";
+		document.getElementById('errcctr').innerHTML = "No puede dejar este espacio en blanco.";
 	}
 	else if(cnfctrsn != ctrsn){
 		error = true;
-		document.getElementById('ccconfpaswdinp').innerHTML = "La contrasenas no coinciden.";
+		document.getElementById('errcctr').innerHTML = "La contrasenas no coinciden.";
 	}
     
     if(eml == "") {
 		error = true;
-		document.getElementById('emailinp').innerHTML = "No puede dejar este espacio en blanco.";
+		document.getElementById('erremail').innerHTML = "No puede dejar este espacio en blanco.";
 	}  
 
 	if(tlfn == "") {
 		error = true;
-		document.getElementById('telefonoinp').innerHTML = "No puede dejar este espacio en blanco.";
+		document.getElementById('errtel').innerHTML = "No puede dejar este espacio en blanco.";
 	}  
 	else if((tiene_mayusculas(tlfn) == true) || (tiene_minusculas(tlfn) == true) || (tiene_simbolos(tlfn) == true)) {
 		error = true;
-		document.getElementById('telefonoinp').innerHTML = "El telefono solo puede tener numeros.";
+		document.getElementById('errtel').innerHTML = "El telefono solo puede tener numeros.";
 	}
 
 
