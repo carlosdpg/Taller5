@@ -11,7 +11,7 @@ const email = document.getElementById('emailinp');
 
 let idus = idusuario + "";
 idus = idus.trim();
-let idp = idpais.toString().trim();
+let idp = idpais + "";
 idp = idp.trim();
 const nmbr = nombre.trim();
 const aplld = apellido.trim();
