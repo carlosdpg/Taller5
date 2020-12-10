@@ -10,7 +10,7 @@ const confcontrasena = document.getElementById('ccconfpaswdinp');
 const email = document.getElementById('emailinp');
 
 let idus = idusuario + "";
-idus = idus + "";
+idus = idus.trim();
 let idp = idpais.toString().trim();
 idp = idp.trim();
 const nmbr = nombre.trim();
