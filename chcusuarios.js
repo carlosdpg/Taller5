@@ -81,53 +81,59 @@ function checkInputs() {
 	let error = false;
 	if(idus == "") {
 		error = true;
+		document.getElementById('idusuarioinp').innerHTML = "No puede dejar este espacio en blanco.";
 	} 
 
     if(idp == "") {
 		error = true;
+		document.getElementById('idpaisinp').innerHTML = "No puede dejar este espacio en blanco.";
 	} 
     
     if(nmbr == "") {
 		error = true;
+		document.getElementById('nombreinp').innerHTML = "No puede dejar este espacio en blanco.";
 	} 
-     else if (nmbr.length > 25) {
-		error = true;
-	 }
     
     if(aplld == "") {
 		error = true;
+		document.getElementById('apellidoinp').innerHTML = "No puede dejar este espacio en blanco.";
 	}
-     else if (aplld.length > 25) {
-		error = true;
-	 }
     
     if(drccn == "") {
 		error = true;
+		document.getElementById('direccioninp').innerHTML = "No puede dejar este espacio en blanco.";
 	}
 	else if((/^cll/.test(drccn.substring(0,4)) == false) && (/^cra/.test(drccn.substring(0,4)) == false) && (/^av/.test(drccn.substring(0,4)) == false) && (/^anv/.test(drccn.substring(0,4)) == false) && (/^trans/.test(drccn.substring(0,4)) == false)){
 		error = true;
+		document.getElementById('direccioninp').innerHTML = "Ingrese una direccion valida (sin mayusculas).";
 	}
 
     if(ccusr == "") {
 		error = true;
+		document.getElementById('ccusuarioinp').innerHTML = "No puede dejar este espacio en blanco.";
 	}
 
     if(ctrsn == "") {
 		error = true;
+		document.getElementById('ccpaswdinp').innerHTML = "No puede dejar este espacio en blanco.";
 	} 
 	else if((tiene_mayusculas(ctrsn) == false) && (tiene_minusculas(ctrsn) == false) && (tiene_numeros(ctrsn) == false) && (tiene_simbolos(ctrsn) == false)){
 		error = true;
+		document.getElementById('ccpaswdinp').innerHTML = "La contrasena necesita tener al menos una letra mayuscula, una minuscula, un numero y  1 simbolos y tener de 15 a 20 caracteres.";
 	}
     
     if(cnfctrsn == "") {
 		error = true;
+		document.getElementById('ccconfpaswdinp').innerHTML = "No puede dejar este espacio en blanco.";
 	}
 	else if(cnfctrsn != ctrsn){
 		error = true;
+		document.getElementById('ccconfpaswdinp').innerHTML = "La contrasenas no coinciden.";
 	}
     
     if(eml == "") {
 		error = true;
+		document.getElementById('emailinp').innerHTML = "No puede dejar este espacio en blanco.";
 	}  
 
 
