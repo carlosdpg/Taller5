@@ -35,52 +35,103 @@ form.addEventListener('submit', (e) => {
 });
 
 
-function setErrorFor(input) {
-	alert(input + "  no es valido.");
+function tiene_minusculas(texto){
+   for(i=0; i<texto.length; i++){
+		var letras="abcdefghyjklmnñopqrstuvwxyz";
+		if (letras.indexOf(texto.charAt(i),0)!=-1){
+			return 1;
+		}
+   }
+   return 0;
+}
+
+function tiene_mayusculas(texto){
+	var letras_mayusculas="ABCDEFGHYJKLMNÑOPQRSTUVWXYZ";
+	for(i=0; i<texto.length; i++){
+		if (letras_mayusculas.indexOf(texto.charAt(i),0)!=-1){
+			return 1;
+		}
+	}
+   return 0;
+}
+
+function tiene_numeros(texto){
+	var numeros="0123456789";
+	for(i=0; i<texto.length; i++){
+		if (numeros.indexOf(texto.charAt(i),0)!=-1){
+			return 1;
+		}
+	}
+   return 0;
+}
+
+function tiene_simbolos(texto){
+	var simbolos="#%/&";
+	for(i=0; i<texto.length; i++){
+		if (simbolos.indexOf(texto.charAt(i),0)!=-1){
+			return 1;
+		}
+	}
+   return 0;
 }
 
 
+
 function checkInputs() {
-	
+	let error = false;
 	if(idus == "") {
-		setErrorFor("idusuario");
+		error = true;
 	} 
 
     if(idp == "") {
-		setErrorFor("idpais");
+		error = true;
 	} 
     
     if(nmbr == "") {
-		setErrorFor("nombre");
+		error = true;
 	} 
      else if (nmbr.length > 25) {
-		setErrorFor("nombre");
+		error = true;
 	 }
     
     if(aplld == "") {
-		setErrorFor("apellido");
+		error = true;
 	}
      else if (aplld.length > 25) {
-		setErrorFor("apellido");
+		error = true;
 	 }
     
     if(drccn == "") {
-		setErrorFor("direccion");
+		error = true;
+	}
+	else if((/^cll/.test(drccn.substring(0,4)) == false) && (/^cra/.test(drccn.substring(0,4)) == false) && (/^av/.test(drccn.substring(0,4)) == false) && (/^anv/.test(drccn.substring(0,4)) == false) &&| (/^trans/.test(drccn.substring(0,4)) == false)){
+		error = true;
 	}
 
     if(ccusr == "") {
-		setErrorFor("ccusuario");
+		error = true;
 	}
 
     if(ctrsn == "") {
-		setErrorFor("contrasena");
+		error = true;
 	} 
+	else if((tiene_mayusculas(ctrsn) == false) && (tiene_minusculas(ctrsn) == false) && (tiene_numeros(ctrsn) == false) && (tiene_simbolos(ctrsn) == false)){
+		error = true;
+	}
     
     if(cnfctrsn == "") {
-		setErrorFor("confcontrasena");
+		error = true;
+	}
+	else if(cnfctrsn != ctrsn){
+		error = true;
 	}
     
     if(eml == "") {
-		setErrorFor("email");
+		error = true;
 	}  
+
+
+	if(error == true){
+		alert("Intente de nuevo.");
+	}
 }
