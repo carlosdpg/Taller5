@@ -13,13 +13,20 @@ let idus = idusuario + "";
 idus = idus.trim();
 let idp = idpais + "";
 idp = idp.trim();
-const nmbr = nombre.trim();
-const aplld = apellido.trim();
-const drccn = direccion.trim();
-const ccusr = ccusuario.trim();
-const ctrsn = contrasena.trim();
-const cnfctrsn = confcontrasena.trim();
-const eml = email.trim();
+let nmbr = nombre + "";
+nmbr = nmbr.trim();
+let aplld = apellido + "";
+aplld = aplld.trim();
+let drccn = direccion + "";
+drccn = drccn.trim();
+let ccusr = ccusuario + "";
+ccusr = ccusr.trim();
+let ctrsn = contrasena + "";
+ctrsn = ctrsn.trim();
+let cnfctrsn = confcontrasena + "";
+cnfctrsn = cnfctrsn.trim();
+let eml = email + "";
+eml = eml.trim();
 
 alert("prueba");
 
