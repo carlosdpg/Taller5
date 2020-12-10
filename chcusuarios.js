@@ -29,43 +29,43 @@ form.addEventListener('submit', (e) => {
 
 function checkInputs() {
 	
-	if(idus == '') {
+	if(idus == "") {
 		setErrorFor("idusuario");
 	} 
 
-    if(idp == '') {
+    if(idp == "") {
 		setErrorFor("idpais");
 	} 
     
-    if(nmbr == '') {
+    if(nmbr == "") {
 		setErrorFor("nombre");
 	} 
      else if (nmbr.length > 25) {
 		setErrorFor("nombre");
 	 }
     
-    if(aplld == '') {
+    if(aplld == "") {
 		setErrorFor("apellido");
 	}
      else if (aplld.length > 25) {
 		setErrorFor("apellido");
 	 }
     
-    if(drccn == '') {
+    if(drccn == "") {
 		setErrorFor("direccion");
     
-    if(ccusr == '') {
+    if(ccusr == "") {
 		setErrorFor("ccusuario");
     
-    if(ctrsn == '') {
+    if(ctrsn == "") {
 		setErrorFor("contrasena");
 	} 
     
-    if(cnfctrsn == '') {
+    if(cnfctrsn == "") {
 		setErrorFor("confcontrasena");
 	}
     
-    if(eml == '') {
+    if(eml == "") {
 		setErrorFor("email");
 	}  
     else if (!isEmail(eml)) {
