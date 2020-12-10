@@ -9,15 +9,15 @@ const contrasena = document.getElementById('ccpaswdinp');
 const confcontrasena = document.getElementById('ccconfpaswdinp');
 const email = document.getElementById('emailinp');
 
-const idus = idusuario.toString().trim;
-const idp = idpais.toString().trim;
-const nmbr = nombre.trim;
-const aplld = apellido.trim;
-const drccn = direccion.trim;
-const ccusr = ccusuario.trim;
-const ctrsn = contrasena.trim;
-const cnfctrsn = confcontrasena.trim;
-const eml = email.trim;
+const idus = idusuario.toString().trim();
+const idp = idpais.toString().trim();
+const nmbr = nombre.trim();
+const aplld = apellido.trim();
+const drccn = direccion.trim();
+const ccusr = ccusuario.trim();
+const ctrsn = contrasena.trim();
+const cnfctrsn = confcontrasena.trim();
+const eml = email.trim();
 
 alert("prueba");
 
