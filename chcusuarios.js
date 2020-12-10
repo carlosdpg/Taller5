@@ -104,7 +104,7 @@ function checkInputs() {
     if(drccn == "") {
 		error = true;
 	}
-	else if((/^cll/.test(drccn.substring(0,4)) == false) && (/^cra/.test(drccn.substring(0,4)) == false) && (/^av/.test(drccn.substring(0,4)) == false) && (/^anv/.test(drccn.substring(0,4)) == false) &&| (/^trans/.test(drccn.substring(0,4)) == false)){
+	else if((/^cll/.test(drccn.substring(0,4)) == false) && (/^cra/.test(drccn.substring(0,4)) == false) && (/^av/.test(drccn.substring(0,4)) == false) && (/^anv/.test(drccn.substring(0,4)) == false) && (/^trans/.test(drccn.substring(0,4)) == false)){
 		error = true;
 	}
 
