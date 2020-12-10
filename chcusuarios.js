@@ -9,8 +9,10 @@ const contrasena = document.getElementById('ccpaswdinp');
 const confcontrasena = document.getElementById('ccconfpaswdinp');
 const email = document.getElementById('emailinp');
 
-const idus = idusuario.toString().trim();
-const idp = idpais.toString().trim();
+let idus = idusuario + "";
+idus = idus + "";
+let idp = idpais.toString().trim();
+idp = idp.trim();
 const nmbr = nombre.trim();
 const aplld = apellido.trim();
 const drccn = direccion.trim();
@@ -64,10 +66,12 @@ function checkInputs() {
     
     if(drccn == "") {
 		setErrorFor("direccion");
-    
+	}
+
     if(ccusr == "") {
 		setErrorFor("ccusuario");
-    
+	}
+
     if(ctrsn == "") {
 		setErrorFor("contrasena");
 	} 
