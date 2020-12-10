@@ -8,6 +8,7 @@ let ccusuario = document.getElementById('ccusuarioinp');
 let contrasena = document.getElementById('ccpaswdinp');
 let confcontrasena = document.getElementById('ccconfpaswdinp');
 let email = document.getElementById('emailinp');
+let telefono = document.getElementById('telefonoinp');
 
 let idus = idusuario + "";
 idus = idus.trim();
@@ -27,6 +28,8 @@ let cnfctrsn = confcontrasena + "";
 cnfctrsn = cnfctrsn.trim();
 let eml = email + "";
 eml = eml.trim();
+let tlfn = telefono + "";
+tlfn = tlfn.trim();
 
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
@@ -66,7 +69,7 @@ function tiene_numeros(texto){
 }
 
 function tiene_simbolos(texto){
-	var simbolos="#%/&";
+	var simbolos="#%/& ";
 	for(i=0; i<texto.length; i++){
 		if (simbolos.indexOf(texto.charAt(i),0)!=-1){
 			return 1;
@@ -139,6 +142,15 @@ function checkInputs() {
 		error = true;
 		document.getElementById('emailinp').innerHTML = "No puede dejar este espacio en blanco.";
 	}  
+
+	if(tlfn == "") {
+		error = true;
+		document.getElementById('telefonoinp').innerHTML = "No puede dejar este espacio en blanco.";
+	}  
+	else if((tiene_mayusculas(tlfn) == true) || (tiene_minusculas(tlfn) == true) || (tiene_simbolos(tlfn) == true)) {
+		error = true;
+		document.getElementById('telefonoinp').innerHTML = "El telefono solo puede tener numeros.";
+	}
 
 
 	if(error == true){
