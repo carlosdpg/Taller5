@@ -1,13 +1,13 @@
-const form = document.getElementById('registro');
-const idusuario = document.getElementById('idusuarioinp');
-const idpais = document.getElementById('idpaisinp');
-const nombre = document.getElementById('nombreinp');
-const apellido = document.getElementById('apellidoinp');
-const direccion = document.getElementById('direccioninp');
-const ccusuario = document.getElementById('ccusuarioinp');
-const contrasena = document.getElementById('ccpaswdinp');
-const confcontrasena = document.getElementById('ccconfpaswdinp');
-const email = document.getElementById('emailinp');
+let form = document.getElementById('registro');
+let idusuario = document.getElementById('idusuarioinp');
+let idpais = document.getElementById('idpaisinp');
+let nombre = document.getElementById('nombreinp');
+let apellido = document.getElementById('apellidoinp');
+let direccion = document.getElementById('direccioninp');
+let ccusuario = document.getElementById('ccusuarioinp');
+let contrasena = document.getElementById('ccpaswdinp');
+let confcontrasena = document.getElementById('ccconfpaswdinp');
+let email = document.getElementById('emailinp');
 
 let idus = idusuario + "";
 idus = idus.trim();
