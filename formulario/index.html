@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <main>
+    <form action="datos.php" class="formulario" id="formulario" method="GET">
+        <div class="formulario___grupo formulario__grupo-incorrecto" id="grupo__nombre">
+            
+        <label for="nombre" class="formulario__label">nombre</label>
+        <input type="text" class="formulario__input"  placeholder="Escribe tu Nombre" maxlength="25"name="nombre" id="nombre" size="50">
+        <i class="formulario__validacion fas fa-times-circle"></i>
+        <p class="formulario__input-error">El campo nombre debe estar lleno y debe tener una longitud de máximo 25 caracteres</p>
+
+        </div>
+        <div class="formulario__grupo"id="grupo__apellido">
+            <label for="apellido" class="formulario__label">Apellido</label> 
+            <input type="text" class="formulario__input"  placeholder="Escribe apellido" maxlength="25"name="apellido" id="apellido"size="50">
+            <i class="formulario__validacion fas fa-times-circle"></i>
+            <p class="formulario__input-error">El campo apellido debe estar lleno y debe tener una longitud de máximo 25 caracteres</p>
+
+        </div>
+       
+        <div class="formulario__grupo" id="grupo__direccion">
+            <label for="direccion" class="formulario__label">direccion</label>
+        <input type="text" class="formulario__input"  placeholder="call,cra,av,anv,trans" maxlength="20"  name="direccion" id="direccion"size="50">
+        <i class="formulario__validacion fas fa-times-circle"></i>
+        <p class="formulario__input-error">EL campo direccion debe empezar por las siguientes palabras , cll,cra,av,anv,trans</p>
+
+        </div>
+        <div class="formulario__grupo" id="grupo__usuario">
+            <label for="usuario" class="formulario__label">Usuario</label>
+        <input type="text" class="formulario__input" placeholder="Escribe tu Usuario" maxlength="25" minlength="10" name="usuario" id="usuario"size="50">
+        <i class="formulario__validacion fas fa-times-circle"></i>
+        <p class="formulario__input-error">EL campo usuario debe estar lleno y debe rener una longitud maxima de 20 y minima de 10</p>
+
+        </div>
+ 
+        <div class="formulario__grupo"id="grupo__contraseña">
+            <label for="contraseña" class="formulario__label">Contraseña</label>
+        <input type="password" class="formulario__input" placeholder="Escribe tu contraseña" maxlength="25" minlength="15" name="contraseña" id="contraseña"size="50">
+        <i class="formulario__validacion fas fa-times-circle"></i>
+        <p class="formulario__input-error">debe estar lleno y debe tener una longitud de máximo 20 y mínimo 15 caracteres. debe contenermayúsculas , numeros, letras y/o los siguientes caracteres [#,%,/,&] </p>
+
+        </div>
+        
+        <div class="formulario__grupo"id="grupo__contraseña2">
+            <label for="contraseña2" class="formulario__label">Repetir contraseña</label>
+        <input type="password" class="formulario__input"  placeholder="Escribe tu contraseña" maxlength="25" minlength="15" name="contraseña2" id="contraseña2"size="50">
+        <i class="formulario__validacion fas fa-times-circle"></i>
+        <p class="formulario__input-error">las contraseñas deben coincidir </p>
+
+        </div>
+
+        
+        <div class="formulario__grupo" id="grupo__correo">
+        
+        <label for="correo" class="formulario__label">Correo</label>
+        <input type="email" class="formulario__input" placeholder="Escribe tu correo" maxlength="120" minlength="10" name="correo" id="correo"size="50">
+        <i class="formulario__validacion fas fa-times-circle"></i>
+        <p class="formulario__input-error">El campo correo debe estar lleno y debe tener maximo 120 caractes</p>
+
+        </div>
+
+        <div class="formulario___grupo_terminos" id="grupo__terminos">
+            <label for="" class="formulario__label">
+                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                <p class="formulario__grupo-terminos">Acepto los terminos y condiciones</p>            
+            </label>
+
+        </div>
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class=" fas fa-exclamation-triangle"></i><b>Error:</b>Por favor rellene el formulario correctamente</p>
+            
+        </div>
+        <div class="formulario__grupo formulario__grupo-btn-enviar" id="grupo__boton">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje_exito">El formulario se envio exitosamente</p>
+
+        </div>
+    </main>
+
+        
+        
+
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js"crossorigin="anonymous"></script>
+          
+    </form>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
