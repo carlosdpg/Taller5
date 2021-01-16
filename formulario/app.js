@@ -96,6 +96,6 @@ const terminos =document.getElementById('terminos');
 if( campos.nombre && campos.apellido && campos.usuario && campos.coarreo && campos.contraseña && campos.direccion && terminos.checked ){
     formulario.reset();
     
-}s
+}
 });
 

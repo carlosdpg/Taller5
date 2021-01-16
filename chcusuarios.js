@@ -10,6 +10,7 @@ let confcontrasena = document.getElementById('ccconfpaswdinp');
 let email = document.getElementById('emailinp');
 let telefono = document.getElementById('telefonoinp');
 
+
 let idus = idusuario + "";
 idus = idus.trim();
 let idp = idpais + "";
