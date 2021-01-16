@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro de gustos</title>
+    </head>
+    <body>
+        <form>
+            <p>Color favorito</p>
+            <div>
+                <input type="radio" id="colorChoice1"
+                name="contact" value="rojo">
+                <label>Rojo</label>
+
+                <input type="radio" id="colorChoice2"
+                name="contact" value="azul">
+                <label>Azul</label>
+
+                <input type="radio" id="colorChoice3"
+                name="contact" value="amarillo">
+                <label>Amarillo</label>
+            </div>
+
+            <p>Marca favorita</p>
+            <div>
+                <input type="radio" id="marcaChoice1"
+                name="contact" value="Toyota">
+                <label>Rojo</label>
+
+                <input type="radio" id="marcaChoice2"
+                name="contact" value="Subaru">
+                <label>Azul</label>
+
+                <input type="radio" id="marcaChoice3"
+                name="contact" value="Mitsubishi">
+                <label>Amarillo</label>
+            </div>
+
+            <p>Estilo favorito</p>
+            <div>
+                <input type="radio" id="estiloChoice1"
+                name="contact" value="Descapotado">
+                <label>Rojo</label>
+
+                <input type="radio" id="estiloChoice2"
+                name="contact" value="Todoterreno">
+                <label>Azul</label>
+
+                <input type="radio" id="estiloChoice3"
+                name="contact" value="Deportivo">
+                <label>Amarillo</label>
+            </div>
+
+
+            <p>Modelo favorito</p>
+            <div>
+                <input type="radio" id="modeloChoice1"
+                name="contact" value="Clasico">
+                <label>Rojo</label>
+
+                <input type="radio" id="modeloChoice2"
+                name="contact" value="Moderno">
+                <label>Azul</label>
+
+                <input type="radio" id="modeloChoice3"
+                name="contact" value="Camioneta">
+                <label>Amarillo</label>
+            </div>
+
+            <p>Rango de precio</p>
+            <div>
+                <input type="range" list="rango">
+
+                <datalist id="rango">
+                    <option value="10" label="10M"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60" label="50M"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100"></option>
+                    <option value="100+" label="100M+"></option>
+                </datalist>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
