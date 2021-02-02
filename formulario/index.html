@@ -82,6 +82,103 @@
             <p class="formulario__mensaje-exito" id="formulario__mensaje_exito">El formulario se envio exitosamente</p>
 
         </div>
+
+        <input type="radio" name="gustos" id="gustos">
+        <label for="gustos">Seccion de gustos</label>
+            
+        <div class="reveal-if-active">
+            <p>Color favorito</p>
+            <div>
+                <fieldset>
+                <input type="radio" id="colorChoice1"
+                name="color" value="rojo">
+                <label>Rojo</label>
+
+                <input type="radio" id="colorChoice2"
+                name="colort" value="azul">
+                <label>Azul</label>
+
+                <input type="radio" id="colorChoice3"
+                name="colort" value="amarillo">
+                <label>Amarillo</label>
+                </fieldset>
+            </div>
+
+            <p>Marca favorita</p>
+            <div>
+                <fieldset>
+                <input type="radio" id="marcaChoice1"
+                name="marca" value="Toyota">
+                <label>Toyota</label>
+
+                <input type="radio" id="marcaChoice2"
+                name="marca" value="Subaru">
+                <label>Subaru</label>
+
+                <input type="radio" id="marcaChoice3"
+                name="marca" value="Mitsubishi">
+                <label>Mitsubishi</label>
+                </fieldset>
+            </div>
+
+            <p>Estilo favorito</p>
+            <div>
+                <fieldset>
+                <input type="radio" id="estiloChoice1"
+                name="estilo" value="Descapotado">
+                <label>Descapotado</label>
+
+                <input type="radio" id="estiloChoice2"
+                name="estilo" value="Todoterreno">
+                <label>Todoterreno</label>
+
+                <input type="radio" id="estiloChoice3"
+                name="estilo" value="Deportivo">
+                <label>Deportivo</label>
+                </fieldset>
+            </div>
+
+
+            <p>Modelo favorito</p>
+            <div>
+                <fieldset>
+                <input type="radio" id="modeloChoice1"
+                name="modelo" value="Clasico">
+                <label>Clasico</label>
+
+                <input type="radio" id="modeloChoice2"
+                name="modelo" value="Moderno">
+                <label>Moderno</label>
+
+                <input type="radio" id="modeloChoice3"
+                name="modelo" value="Camioneta">
+                <label>Camioneta</label>
+                </fieldset>
+            </div>
+
+            <p>Rango de precio</p>
+            <div>
+
+                <span class="font-weight-bold mr-2">10</span>
+                <input type="range" list="rango">
+
+                <datalist id="rango">
+                    <option value="10" label="10M"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60" label="50M"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100"></option>
+                    <option value="100+" label="100M+"></option>
+                </datalist>
+                <span class="font-weight-bold mr-2">500</span>
+            </div>
+        </div>
+
     </main>
 
         
