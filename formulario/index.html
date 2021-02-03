@@ -1,97 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link rel="stylesheet" href="app.css">
 </head>
+
 <body>
     <main>
-    <form action="datos.php" class="formulario" id="formulario" method="GET">
-        <div class="formulario___grupo formulario__grupo-incorrecto" id="grupo__nombre">
-            
-        <label for="nombre" class="formulario__label">nombre</label>
-        <input type="text" class="formulario__input"  placeholder="Escribe tu Nombre" maxlength="25"name="nombre" id="nombre" size="50">
-        <i class="formulario__validacion fas fa-times-circle"></i>
-        <p class="formulario__input-error">El campo nombre debe estar lleno y debe tener una longitud de máximo 25 caracteres</p>
+        <form action="datos.php" class="formulario" id="formulario" method="GET">
+            <div class="formulario___grupo formulario__grupo-incorrecto" id="grupo__nombre">
 
-        </div>
-        <div class="formulario__grupo"id="grupo__apellido">
-            <label for="apellido" class="formulario__label">Apellido</label> 
-            <input type="text" class="formulario__input"  placeholder="Escribe apellido" maxlength="25"name="apellido" id="apellido"size="50">
-            <i class="formulario__validacion fas fa-times-circle"></i>
-            <p class="formulario__input-error">El campo apellido debe estar lleno y debe tener una longitud de máximo 25 caracteres</p>
+                <label for="nombre" class="formulario__label">nombre</label>
+                <input type="text" class="formulario__input" placeholder="Escribe tu Nombre" maxlength="25" name="nombre" id="nombre" size="50">
+                <i class="formulario__validacion fas fa-times-circle"></i>
+                <p class="formulario__input-error">El campo nombre debe estar lleno y debe tener una longitud de máximo 25 caracteres</p>
 
-        </div>
-       
-        <div class="formulario__grupo" id="grupo__direccion">
-            <label for="direccion" class="formulario__label">direccion</label>
-        <input type="text" class="formulario__input"  placeholder="call,cra,av,anv,trans" maxlength="20"  name="direccion" id="direccion"size="50">
-        <i class="formulario__validacion fas fa-times-circle"></i>
-        <p class="formulario__input-error">EL campo direccion debe empezar por las siguientes palabras , cll,cra,av,anv,trans</p>
+            </div>
+            <div class="formulario__grupo" id="grupo__apellido">
+                <label for="apellido" class="formulario__label">Apellido</label>
+                <input type="text" class="formulario__input" placeholder="Escribe apellido" maxlength="25" name="apellido" id="apellido" size="50">
+                <i class="formulario__validacion fas fa-times-circle"></i>
+                <p class="formulario__input-error">El campo apellido debe estar lleno y debe tener una longitud de máximo 25 caracteres</p>
 
-        </div>
-        <div class="formulario__grupo" id="grupo__usuario">
-            <label for="usuario" class="formulario__label">Usuario</label>
-        <input type="text" class="formulario__input" placeholder="Escribe tu Usuario" maxlength="25" minlength="10" name="usuario" id="usuario"size="50">
-        <i class="formulario__validacion fas fa-times-circle"></i>
-        <p class="formulario__input-error">EL campo usuario debe estar lleno y debe rener una longitud maxima de 20 y minima de 10</p>
+            </div>
 
-        </div>
- 
-        <div class="formulario__grupo"id="grupo__contraseña">
-            <label for="contraseña" class="formulario__label">Contraseña</label>
-        <input type="password" class="formulario__input" placeholder="Escribe tu contraseña" maxlength="25" minlength="15" name="contraseña" id="contraseña"size="50">
-        <i class="formulario__validacion fas fa-times-circle"></i>
-        <p class="formulario__input-error">debe estar lleno y debe tener una longitud de máximo 20 y mínimo 15 caracteres. debe contenermayúsculas , numeros, letras y/o los siguientes caracteres [#,%,/,&] </p>
+            <div class="formulario__grupo" id="grupo__direccion">
+                <label for="direccion" class="formulario__label">direccion</label>
+                <input type="text" class="formulario__input" placeholder="call,cra,av,anv,trans" maxlength="20" name="direccion" id="direccion" size="50">
+                <i class="formulario__validacion fas fa-times-circle"></i>
+                <p class="formulario__input-error">EL campo direccion debe empezar por las siguientes palabras , cll,cra,av,anv,trans</p>
 
-        </div>
-        
-        <div class="formulario__grupo"id="grupo__contraseña2">
-            <label for="contraseña2" class="formulario__label">Repetir contraseña</label>
-        <input type="password" class="formulario__input"  placeholder="Escribe tu contraseña" maxlength="25" minlength="15" name="contraseña2" id="contraseña2"size="50">
-        <i class="formulario__validacion fas fa-times-circle"></i>
-        <p class="formulario__input-error">las contraseñas deben coincidir </p>
+            </div>
+            <div class="formulario__grupo" id="grupo__usuario">
+                <label for="usuario" class="formulario__label">Usuario</label>
+                <input type="text" class="formulario__input" placeholder="Escribe tu Usuario" maxlength="25" minlength="10" name="usuario" id="usuario" size="50">
+                <i class="formulario__validacion fas fa-times-circle"></i>
+                <p class="formulario__input-error">EL campo usuario debe estar lleno y debe rener una longitud maxima de 20 y minima de 10</p>
 
-        </div>
+            </div>
 
-        
-        <div class="formulario__grupo" id="grupo__correo">
-        
-        <label for="correo" class="formulario__label">Correo</label>
-        <input type="email" class="formulario__input" placeholder="Escribe tu correo" maxlength="120" minlength="10" name="correo" id="correo"size="50">
-        <i class="formulario__validacion fas fa-times-circle"></i>
-        <p class="formulario__input-error">El campo correo debe estar lleno y debe tener maximo 120 caractes</p>
+            <div class="formulario__grupo" id="grupo__contraseña">
+                <label for="contraseña" class="formulario__label">Contraseña</label>
+                <input type="password" class="formulario__input" placeholder="Escribe tu contraseña" maxlength="25" minlength="15" name="contraseña" id="contraseña" size="50">
+                <i class="formulario__validacion fas fa-times-circle"></i>
+                <p class="formulario__input-error">debe estar lleno y debe tener una longitud de máximo 20 y mínimo 15 caracteres. debe contenermayúsculas , numeros, letras y/o los siguientes caracteres [#,%,/,&] </p>
 
-        </div>
+            </div>
 
-        <div class="formulario___grupo_terminos" id="grupo__terminos">
-            <label for="" class="formulario__label">
+            <div class="formulario__grupo" id="grupo__contraseña2">
+                <label for="contraseña2" class="formulario__label">Repetir contraseña</label>
+                <input type="password" class="formulario__input" placeholder="Escribe tu contraseña" maxlength="25" minlength="15" name="contraseña2" id="contraseña2" size="50">
+                <i class="formulario__validacion fas fa-times-circle"></i>
+                <p class="formulario__input-error">las contraseñas deben coincidir </p>
+
+            </div>
+
+
+            <div class="formulario__grupo" id="grupo__correo">
+
+                <label for="correo" class="formulario__label">Correo</label>
+                <input type="email" class="formulario__input" placeholder="Escribe tu correo" maxlength="120" minlength="10" name="correo" id="correo" size="50">
+                <i class="formulario__validacion fas fa-times-circle"></i>
+                <p class="formulario__input-error">El campo correo debe estar lleno y debe tener maximo 120 caractes</p>
+
+            </div>
+
+            <div class="formulario___grupo_terminos" id="grupo__terminos">
+                <label for="" class="formulario__label">
                 <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-                <p class="formulario__grupo-terminos">Acepto los terminos y condiciones</p>            
+                <p class="formulario__grupo-terminos">Gustos</p>            
             </label>
 
-        </div>
-        <div class="formulario__mensaje" id="formulario__mensaje">
-            <p><i class=" fas fa-exclamation-triangle"></i><b>Error:</b>Por favor rellene el formulario correctamente</p>
-            
-        </div>
-        <div class="formulario__grupo formulario__grupo-btn-enviar" id="grupo__boton">
-            <button type="submit" class="formulario__btn">Enviar</button>
-            <p class="formulario__mensaje-exito" id="formulario__mensaje_exito">El formulario se envio exitosamente</p>
+            </div>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class=" fas fa-exclamation-triangle"></i><b>Error:</b>Por favor rellene el formulario correctamente</p>
 
-        </div>
+            </div>
+            <div class="formulario__grupo formulario__grupo-btn-enviar" id="grupo__boton">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje_exito">El formulario se envio exitosamente</p>
+
+            </div>
+            <div class="d-none" id="inputs_terminos">
+                <p>Color favorito</p>
+                <div>
+                    <fieldset>
+                        <input type="radio" id="colorChoice1" name="color" value="rojo">
+                        <label>Rojo</label>
+
+                        <input type="radio" id="colorChoice2" name="colort" value="azul">
+                        <label>Azul</label>
+
+                        <input type="radio" id="colorChoice3" name="colort" value="amarillo">
+                        <label>Amarillo</label>
+                    </fieldset>
+                </div>
+
+                <p>Marca favorita</p>
+                <div>
+                    <fieldset>
+                        <input type="radio" id="marcaChoice1" name="marca" value="Toyota">
+                        <label>Toyota</label>
+
+                        <input type="radio" id="marcaChoice2" name="marca" value="Subaru">
+                        <label>Subaru</label>
+
+                        <input type="radio" id="marcaChoice3" name="marca" value="Mitsubishi">
+                        <label>Mitsubishi</label>
+                    </fieldset>
+                </div>
+
+                <p>Estilo favorito</p>
+                <div>
+                    <fieldset>
+                        <input type="radio" id="estiloChoice1" name="estilo" value="Descapotado">
+                        <label>Descapotado</label>
+
+                        <input type="radio" id="estiloChoice2" name="estilo" value="Todoterreno">
+                        <label>Todoterreno</label>
+
+                        <input type="radio" id="estiloChoice3" name="estilo" value="Deportivo">
+                        <label>Deportivo</label>
+                    </fieldset>
+                </div>
+
+
+                <p>Modelo favorito</p>
+                <div>
+                    <fieldset>
+                        <input type="radio" id="modeloChoice1" name="modelo" value="Clasico">
+                        <label>Clasico</label>
+
+                        <input type="radio" id="modeloChoice2" name="modelo" value="Moderno">
+                        <label>Moderno</label>
+
+                        <input type="radio" id="modeloChoice3" name="modelo" value="Camioneta">
+                        <label>Camioneta</label>
+                    </fieldset>
+                </div>
+
+                <p>Rango de precio</p>
+                <div>
+
+                    <span class="font-weight-bold mr-2">10</span>
+                    <input type="range" list="rango">
+
+                    <datalist id="rango">
+                        <option value="10" label="10M"></option>
+                        <option value="20"></option>
+                        <option value="30"></option>
+                        <option value="40"></option>
+                        <option value="50"></option>
+                        <option value="60" label="50M"></option>
+                        <option value="70"></option>
+                        <option value="80"></option>
+                        <option value="90"></option>
+                        <option value="100"></option>
+                        <option value="100+" label="100M+"></option>
+                    </datalist>
+                    <span class="font-weight-bold mr-2">500</span>
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+
+        </form>
     </main>
 
-        
-        
-
-        <script src="https://kit.fontawesome.com/2c36e9b7b1.js"crossorigin="anonymous"></script>
-          
-    </form>
-
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
-    
+
 </body>
+
 </html>

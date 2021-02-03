@@ -1,76 +1,82 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "roboto", sans-serif;
     background-color: silver;
 }
-main{
+
+main {
     max-width: 800px;
     width: 90%;
     margin: auto;
     padding: 40px;
-
 }
-.formulario{
+
+.formulario {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px; 
+    gap: 20px;
 }
-.formulario__label{
+
+.formulario__label {
     display: block;
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
-
 }
-.formulario__grupo-input{
+
+.formulario__grupo-input {
     position: relative;
-
-
 }
-formulario__input{
+
+.formulario__input {
     width: 100%;
-    background-color: silver;
+    background-color: white;
     border: 3px solid transparent;
     border-radius: 3px;
     height: 45px;
     line-height: 45px;
     padding: 0 40px 0 10px;
     transition: .3s ease all;
+}
 
+.formulario__input:focus {
+    border: 3px solid #1c50c2;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
-.formulario__input:focus{
-    border:3px solid #1c50c2;
-    outline:  none;
-    box-shadow: 3px 0px 30px rgba(163,163,163,0.4);
-}
-.formulario__input-error{
+
+.formulario__input-error {
     font-size: 12px;
     margin: 0px;
     display: none;
 }
-.formulario__input-error-activo{
+
+.formulario__input-error-activo {
     display: block;
 }
-.formulario__validacion{
+
+.formulario__validacion {
     position: absolute;
-   z-index: 100;
-   font-size: 16px;
-   color: red;
-   opacity: 0;
+    z-index: 100;
+    font-size: 16px;
+    color: red;
+    opacity: 0;
 }
-.formulario__checkbox{
+
+.formulario__checkbox {
     margin-right: 10px;
 }
+
 .formulario__grupo-terminos,
 .formulario__mensaje,
-.formulario__grupo-btn-enviar{
+.formulario__grupo-btn-enviar {
     grid-column: span 2;
-
-
 }
-.formulario__mensaje{
+
+.formulario__mensaje {
     height: 45px;
     line-height: 45px;
     background-color: rgb(190, 57, 57);
@@ -78,19 +84,22 @@ formulario__input{
     border-radius: 3px;
     display: none;
 }
-.formulario__mensaje p{
+
+.formulario__mensaje p {
     margin: 0px;
 }
-.formulario__mensaje-activo{
+
+.formulario__mensaje-activo {
     display: block;
-} 
-formulario__grupo-btn-enviar{
+}
+
+formulario__grupo-btn-enviar {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-.formulario__btn{
+
+.formulario__btn {
     height: 45px;
     line-height: 45px;
     width: 30%;
@@ -101,46 +110,62 @@ formulario__grupo-btn-enviar{
     cursor: pointer;
     transition: .1s ease all;
 }
-.formulario__btn:hover{
+
+.formulario__btn:hover {
     box-shadow: 3px 0px 30px rgba(163, 163, 163, 3);
 }
-.formulario__mensaje-exito{
+
+.formulario__mensaje-exito {
     font-size: 14px;
     color: rgb(30, 214, 14);
     display: none;
-    
 }
-.formulario__mensaje-exito-activo{
+
+.formulario__mensaje-exito-activo {
     display: block;
 }
+
+
 /*estilos validacion........ ....................*/
-.formulario__grupo-correcto .formulario__validacion{
+
+.formulario__grupo-correcto .formulario__validacion {
     color: rgb(49, 187, 21);
     opacity: 1;
-
 }
-.formulario__grupo-incorrecto .formulario__label{
+
+.formulario__grupo-incorrecto .formulario__label {
     color: rgb(173, 31, 43);
 }
-.formulario__grupo-incorrecto .formulario__validacion{
+
+.formulario__grupo-incorrecto .formulario__validacion {
     color: rgb(194, 19, 28);
     opacity: 1;
 }
-..formulario__nombre-incorrecto .formulario__input{
+
+.formulario__nombre-incorrecto .formulario__input {
     border: 3px solid #bb2929;
 }
-/*media ...*/
-@media screen and (max-width: 800){
 
-    .formulario{
-        grid-template-columns: 1fr ;
+
+/* Estilos para aparecer y desaparecer el nuevo form */
+
+.d-none {
+    display: none;
+}
+
+
+/*media ...*/
+
+@media screen and (max-width: 800) {
+    .formulario {
+        grid-template-columns: 1fr;
     }
     .formulario__grupo-terminos,
     .formulario__mensaje,
-    .formulario__grupo-brn-enviar{
+    .formulario__grupo-brn-enviar {
         grid-column: 1;
     }
-    .formulario__btn{
+    .formulario__btn {
         width: 100%;
     }
 }
